@@ -57,9 +57,53 @@ public enum GradientType: String{
       return [colors.detailColor.CGColor, colors.primaryColor.CGColor]
     case .detailSecondary:
       return [colors.detailColor.CGColor, colors.secondaryColor.CGColor]
-      //All colors
+    //All colors
     case .allColors:
       return [colors.backgroundColor.CGColor,  colors.primaryColor.CGColor, colors.secondaryColor.CGColor, colors.detailColor.CGColor]
     }
+  }
+  
+  mutating func gradientTypeFromString(storyboardValue: String){
+    switch storyboardValue {
+    case allColors.rawValue:
+      self = .allColors
+      
+    //Background
+    case backgroundPrimary.rawValue:
+      self = .backgroundPrimary
+    case backgroundSecondary.rawValue:
+      self = .backgroundSecondary
+    case backgroundDetail.rawValue:
+      self = .backgroundDetail
+      
+    //Primary
+    case primaryBackground.rawValue:
+      self = .primaryBackground
+    case primarySecondary.rawValue:
+      self = .primarySecondary
+    case primaryDetail.rawValue:
+      self = .primaryDetail
+      
+    //Secondary
+    case secondaryBackground.rawValue:
+      self = .secondaryBackground
+    case secondaryPrimary.rawValue:
+      self = .secondaryPrimary
+    case secondaryDetail.rawValue:
+      self = .secondaryDetail
+      
+    //Detail
+    case detailBackground.rawValue:
+      self = .detailBackground
+    case detailPrimary.rawValue:
+      self = .detailPrimary
+    case detailSecondary.rawValue:
+      self = .detailSecondary
+      
+      
+    default:
+      self = .backgroundPrimary
+    }
+    
   }
 }

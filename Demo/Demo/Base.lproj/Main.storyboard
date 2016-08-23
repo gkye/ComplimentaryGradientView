@@ -33,6 +33,7 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="sunshine-illo"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="gradientType" value="allColors"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
