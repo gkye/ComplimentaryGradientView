@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fPh-3l-pUU">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="cKc-bL-imb">
+            <objects>
+                <viewController id="fPh-3l-pUU" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="G5x-8L-XdK"/>
+                        <viewControllerLayoutGuide type="bottom" id="l7t-cG-fY2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xn4-gm-pQ4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine-illo" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO">
+                                        <rect key="frame" x="30" y="70" width="355" height="291"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="818-mw-cDO" firstAttribute="top" secondItem="3iV-d6-lA8" secondAttribute="top" constant="70" id="a6x-kK-t4n"/>
+                                    <constraint firstItem="818-mw-cDO" firstAttribute="centerY" secondItem="3iV-d6-lA8" secondAttribute="centerY" id="agI-JW-mbg"/>
+                                    <constraint firstItem="818-mw-cDO" firstAttribute="leading" secondItem="3iV-d6-lA8" secondAttribute="leading" constant="30" id="hXY-aB-Z25"/>
+                                    <constraint firstItem="818-mw-cDO" firstAttribute="centerX" secondItem="3iV-d6-lA8" secondAttribute="centerX" id="qt5-eB-Gxk"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="sunshine-illo"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3iV-d6-lA8" secondAttribute="trailing" id="3xK-Hx-JDl"/>
+                            <constraint firstItem="l7t-cG-fY2" firstAttribute="top" secondItem="3iV-d6-lA8" secondAttribute="bottom" constant="305" id="eH6-8Y-udZ"/>
+                            <constraint firstItem="3iV-d6-lA8" firstAttribute="top" secondItem="xn4-gm-pQ4" secondAttribute="top" id="ius-Tj-7CV"/>
+                            <constraint firstItem="3iV-d6-lA8" firstAttribute="leading" secondItem="xn4-gm-pQ4" secondAttribute="leading" id="n4P-Hh-504"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="compGraidentView" destination="3iV-d6-lA8" id="LNY-9E-peR"/>
+                        <outlet property="selectedImage" destination="818-mw-cDO" id="Blz-BD-6C1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="si3-gR-I52" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="285" y="306"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sunshine-illo" width="800" height="600"/>
+    </resources>
+</document>
