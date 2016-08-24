@@ -34,6 +34,7 @@
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="sunshine-illo"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="gradientType" value="allColors"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="top"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>

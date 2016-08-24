@@ -19,6 +19,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
     super.viewDidLoad()
 //    compGraidentView.gradientTpye = .allColors
     compGraidentView.delegate = self
+    
   }
   
   func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool) {

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E0712AE1D6E648700274B85 /* GradientStartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712AD1D6E648700274B85 /* GradientStartPoint.swift */; };
+		5E0712B31D6E6B7800274B85 /* CAGraidentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */; };
 		5E3D428E1D6BF8C80058B0DB /* ComplimentaryGradientView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3D428D1D6BF8C80058B0DB /* ComplimentaryGradientView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E3D42951D6BF8C80058B0DB /* ComplimentaryGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E3D428A1D6BF8C80058B0DB /* ComplimentaryGradientView.framework */; };
 		5E3D429A1D6BF8C80058B0DB /* ComplimentaryGradientViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42991D6BF8C80058B0DB /* ComplimentaryGradientViewTests.swift */; };
@@ -33,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E0712AD1D6E648700274B85 /* GradientStartPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientStartPoint.swift; sourceTree = "<group>"; };
+		5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CAGraidentLayer.swift; sourceTree = "<group>"; };
 		5E3D428A1D6BF8C80058B0DB /* ComplimentaryGradientView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ComplimentaryGradientView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3D428D1D6BF8C80058B0DB /* ComplimentaryGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ComplimentaryGradientView.h; sourceTree = "<group>"; };
 		5E3D428F1D6BF8C80058B0DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -79,6 +83,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E0712AF1D6E6AD200274B85 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				5E3D42A81D6BF9830058B0DB /* GradientType.swift */,
+				5E0712AD1D6E648700274B85 /* GradientStartPoint.swift */,
+			);
+			name = Enums;
+			sourceTree = "<group>";
+		};
+		5E0712B01D6E6AEB00274B85 /* Open Source */ = {
+			isa = PBXGroup;
+			children = (
+				5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */,
+			);
+			name = "Open Source";
+			sourceTree = "<group>";
+		};
+		5E0712B11D6E6B6A00274B85 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
 		5E3D42801D6BF8C80058B0DB = {
 			isa = PBXGroup;
 			children = (
@@ -102,9 +131,10 @@
 		5E3D428C1D6BF8C80058B0DB /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5E0712B11D6E6B6A00274B85 /* Extensions */,
 				5E3D42A41D6BF9480058B0DB /* ComplimentaryGradientView.swift */,
-				5E3D42A81D6BF9830058B0DB /* GradientType.swift */,
-				5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */,
+				5E0712B01D6E6AEB00274B85 /* Open Source */,
+				5E0712AF1D6E6AD200274B85 /* Enums */,
 				5E3D428D1D6BF8C80058B0DB /* ComplimentaryGradientView.h */,
 				5E3D428F1D6BF8C80058B0DB /* Info.plist */,
 			);
@@ -291,7 +321,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E0712B31D6E6B7800274B85 /* CAGraidentLayer.swift in Sources */,
 				5E3D42A51D6BF9480058B0DB /* ComplimentaryGradientView.swift in Sources */,
+				5E0712AE1D6E648700274B85 /* GradientStartPoint.swift in Sources */,
 				5E3D42A71D6BF95C0058B0DB /* UIImageColors.swift in Sources */,
 				5E3D42A91D6BF9830058B0DB /* GradientType.swift in Sources */,
 			);
@@ -546,6 +578,7 @@
 				5E3D42A01D6BF8C80058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3D42A11D6BF8C80058B0DB /* Build configuration list for PBXNativeTarget "ComplimentaryGradientViewTests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +587,7 @@
 				5E3D42A31D6BF8C80058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3D42C81D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
@@ -562,6 +596,7 @@
 				5E3D42CA1D6BFA2C0058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3D42CB1D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -570,6 +605,7 @@
 				5E3D42CD1D6BFA2C0058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

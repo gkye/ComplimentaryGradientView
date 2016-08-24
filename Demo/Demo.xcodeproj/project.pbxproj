@@ -370,6 +370,7 @@
 				5E3D42EB1D6BFA830058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

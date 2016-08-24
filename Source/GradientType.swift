@@ -5,7 +5,7 @@
 //  Created by George Kye on 2016-08-22.
 //  Copyright © 2016 George Kye. All rights reserved.
 //
-
+import Foundation
 
 public enum GradientType: String{
   
@@ -30,12 +30,15 @@ public enum GradientType: String{
   
   func getGradientColors(colors: UIImageColors)->[CGColor]{
     switch self {
+      
+    //Background
     case .backgroundPrimary:
       return [colors.backgroundColor.CGColor, colors.primaryColor.CGColor]
     case .backgroundSecondary:
       return [colors.backgroundColor.CGColor, colors.secondaryColor.CGColor]
     case .backgroundDetail:
       return [colors.backgroundColor.CGColor, colors.detailColor.CGColor]
+      
     //Primary
     case .primaryBackground:
       return [colors.primaryColor.CGColor, colors.backgroundColor.CGColor]
@@ -43,6 +46,7 @@ public enum GradientType: String{
       return [colors.primaryColor.CGColor, colors.secondaryColor.CGColor]
     case .primaryDetail:
       return [colors.primaryColor.CGColor, colors.detailColor.CGColor]
+      
     //Secondary
     case .secondaryBackground:
       return [colors.secondaryColor.CGColor, colors.backgroundColor.CGColor]
@@ -50,6 +54,7 @@ public enum GradientType: String{
       return [colors.secondaryColor.CGColor, colors.primaryColor.CGColor]
     case .secondaryDetail:
       return [colors.secondaryColor.CGColor, colors.detailColor.CGColor]
+      
     //Detail
     case .detailBackground:
       return [colors.detailColor.CGColor, colors.backgroundColor.CGColor]
@@ -57,14 +62,18 @@ public enum GradientType: String{
       return [colors.detailColor.CGColor, colors.primaryColor.CGColor]
     case .detailSecondary:
       return [colors.detailColor.CGColor, colors.secondaryColor.CGColor]
+      
     //All colors
     case .allColors:
       return [colors.backgroundColor.CGColor,  colors.primaryColor.CGColor, colors.secondaryColor.CGColor, colors.detailColor.CGColor]
+      
     }
   }
   
   mutating func gradientTypeFromString(storyboardValue: String){
     switch storyboardValue {
+      
+      //All colors
     case allColors.rawValue:
       self = .allColors
       
@@ -100,10 +109,8 @@ public enum GradientType: String{
     case detailSecondary.rawValue:
       self = .detailSecondary
       
-      
     default:
       self = .backgroundPrimary
     }
-    
   }
 }
