@@ -1,5 +1,6 @@
 # ComplimentaryGradientView
-Create complementary gradients generated from dominant and prominent colors in supplied image
+Create complementary gradients generated from dominant and prominent colors in supplied image.
+Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a> :heart:
 
 
 ## Usage
@@ -25,4 +26,4 @@ Create complementary gradients generated from dominant and prominent colors in s
 
 ## Dependencies
 
-* UIImageColors <a href="" > <a/>
+<a href="https://github.com/jathu/UIImageColors" > UIImageColors <a/>
