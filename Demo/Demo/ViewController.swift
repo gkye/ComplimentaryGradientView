@@ -14,10 +14,18 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   @IBOutlet var compGraidentView: ComplimentaryGradientView!
   @IBOutlet var selectedImage: UIImageView!
   
+  let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+  
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
-//    compGraidentView.gradientTpye = .allColors
+    //Colors for gradient are derived from the provided image
+    
+    gradientView.image = UIImage(named: "myImg")
+    compGraidentView.gradientTpye = .allColors
+    gradientView.gradientTpye = .detailPrimary
+    gradientView.gradientStartPoint = .Left
     compGraidentView.delegate = self
     
   }

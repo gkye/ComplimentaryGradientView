@@ -11,13 +11,17 @@
 }
 
 public class ComplimentaryGradientView: UIView{
-  
+    
   //MARK: public
   
   /// Gradients are created from colors are retrived from this image
-  @IBInspectable var image: UIImage?
+  @IBInspectable public var image: UIImage?
   
-  @IBInspectable var gradientType: String!
+  @IBInspectable var type: String! = "backgroundPrimary"{
+    didSet{
+      gradientTpye.gradientTypeFromString(type)
+    }
+  }
   
   @IBInspectable var startPoint: String! = "Top"{
     didSet{
@@ -25,7 +29,7 @@ public class ComplimentaryGradientView: UIView{
     }
   }
   
-  public var gradientTpyeEnum: GradientType = .backgroundPrimary
+  public var gradientTpye: GradientType = .backgroundPrimary
   public var gradientStartPoint: GradientStartPoint = .Top
   
   /// Executed fetching of image colors in background if set true. Default = false
@@ -38,12 +42,10 @@ public class ComplimentaryGradientView: UIView{
   
   public override func layoutSubviews() {
     super.layoutSubviews()
-    gradientTpyeEnum.gradientTypeFromString(gradientType)
 
     if let img = image{
       configGradient(img)
     }
-    
   }
   
   private func configGradient(image: UIImage){
@@ -59,7 +61,7 @@ public class ComplimentaryGradientView: UIView{
   }
   
   private func configGradientWithStartColor(imageColors: UIImageColors) {
-    let gradientColors = gradientTpyeEnum.getGradientColors(imageColors)
+    let gradientColors = gradientTpye.getGradientColors(imageColors)
     
     gradientLayer.removeFromSuperlayer()
     gradientLayer.frame.size = self.frame.size
