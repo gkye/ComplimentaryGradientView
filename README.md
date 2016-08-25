@@ -28,6 +28,10 @@ Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a> :heart:
 ![screen shot 2016-08-24 at 8 38 11 pm](https://cloud.githubusercontent.com/assets/14007152/17952752/734faff0-6a3b-11e6-95bb-69acd344174b.png)
 
 
+### Protocols
+```swift
+  optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
+```
 
 ## Dependencies
 
