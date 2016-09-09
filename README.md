@@ -3,10 +3,13 @@ Create complementary gradients generated from dominant and prominent colors in s
 Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a> :heart:
 
 
-allColors/left            |  primaryBackground/Top
+allColors/left            |  primaryBackground/top
 :-------------------------:|:-------------------------:
-![](https://cloud.githubusercontent.com/assets/14007152/17952751/733ba4ba-6a3b-11e6-9ae6-2b23d92b0dea.png)  |  
-  | ![](https://cloud.githubusercontent.com/assets/14007152/18399831/099a7c94-76a1-11e6-8362-e9504d33104f.png)
+![](https://cloud.githubusercontent.com/assets/14007152/17952751/733ba4ba-6a3b-11e6-9ae6-2b23d92b0dea.png)  |  ![](https://cloud.githubusercontent.com/assets/14007152/18399831/099a7c94-76a1-11e6-8362-e9504d33104f.png)
+
+detailBackground/top            |  secondaryBackground/bottom
+:-------------------------:|:-------------------------:
+![](https://cloud.githubusercontent.com/assets/14007152/18399974/c8a7ba48-76a1-11e6-86e8-d1df76092855.png)  |  ![](https://cloud.githubusercontent.com/assets/14007152/18400039/23b266e0-76a2-11e6-819f-9d53f5376e54.png)
 
 
 
@@ -36,6 +39,31 @@ allColors/left            |  primaryBackground/Top
   optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
 ```
 
+### Graident Types
+
+```swift
+public enum GradientType: String{
+  
+  //background
+  case backgroundPrimary
+  case backgroundSecondary
+  case backgroundDetail
+  //primary
+  case primaryBackground
+  case primarySecondary
+  case primaryDetail
+  //secondary
+  case secondaryBackground
+  case secondaryPrimary
+  case secondaryDetail
+  //detail
+  case detailBackground
+  case detailPrimary
+  case detailSecondary
+  //AllColors
+  case allColors
+  
+  }
 ```
 
 ## Dependencies
