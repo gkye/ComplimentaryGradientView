@@ -48,6 +48,7 @@ public class ComplimentaryGradientView: UIView{
     }
   }
   
+  
   private func configGradient(image: UIImage){
     if !backgroundExecution{
       let imageColors = image.getColors()

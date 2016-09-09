@@ -21,13 +21,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   override func viewDidLoad() {
     super.viewDidLoad()
     //Colors for gradient are derived from the provided image
-    
-    gradientView.image = UIImage(named: "myImg")
-    compGraidentView.gradientTpye = .allColors
-    gradientView.gradientTpye = .detailPrimary
-    gradientView.gradientStartPoint = .Left
     compGraidentView.delegate = self
-    
   }
   
   func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool) {

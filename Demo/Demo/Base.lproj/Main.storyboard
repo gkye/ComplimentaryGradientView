@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fPh-3l-pUU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fPh-3l-pUU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
+                            <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sunshine-illo" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dmb_25th_gorge" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO">
                                         <rect key="frame" x="30" y="70" width="355" height="291"/>
                                     </imageView>
                                 </subviews>
@@ -32,9 +32,9 @@
                                     <constraint firstItem="818-mw-cDO" firstAttribute="centerX" secondItem="3iV-d6-lA8" secondAttribute="centerX" id="qt5-eB-Gxk"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="sunshine-illo"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="left"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="allColors"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="dmb_25th_gorge"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="bottom"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="secondaryBackground"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -46,6 +46,7 @@
                             <constraint firstItem="3iV-d6-lA8" firstAttribute="leading" secondItem="xn4-gm-pQ4" secondAttribute="leading" id="n4P-Hh-504"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="compGraidentView" destination="3iV-d6-lA8" id="LNY-9E-peR"/>
@@ -58,6 +59,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="sunshine-illo" width="800" height="600"/>
+        <image name="dmb_25th_gorge" width="800" height="600"/>
     </resources>
 </document>
