@@ -3,10 +3,10 @@ Create complementary gradients generated from dominant and prominent colors in s
 Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a> :heart:
 
 
-allColors/left             |  primaryBackground/Top
+allColors/left            |  primaryBackground/Top
 :-------------------------:|:-------------------------:
 ![](https://cloud.githubusercontent.com/assets/14007152/17952751/733ba4ba-6a3b-11e6-9ae6-2b23d92b0dea.png)  |  
-![](https://cloud.githubusercontent.com/assets/14007152/18399831/099a7c94-76a1-11e6-8362-e9504d33104f.png)
+  | ![](https://cloud.githubusercontent.com/assets/14007152/18399831/099a7c94-76a1-11e6-8362-e9504d33104f.png)
 
 
 
