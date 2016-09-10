@@ -13,6 +13,15 @@ detailBackground/top            |  secondaryBackground/bottom
 
 
 
+## Installation
+
+ComplimentaryGradientView is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
+
+```ruby
+pod 'ComplimentaryGradientView'
+```
+
 ## Usage
 
 ### Code
@@ -67,3 +76,8 @@ public enum GradientType: String {
 ## Dependencies
 
 <a href="https://github.com/jathu/UIImageColors" > UIImageColors <a/>
+
+## License
+
+ComplimentaryGradientView is available under the MIT license. See the LICENSE file for more info.
+
