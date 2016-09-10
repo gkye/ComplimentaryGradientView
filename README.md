@@ -17,17 +17,16 @@ detailBackground/top            |  secondaryBackground/bottom
 
 ### Code
 ```swift
-  let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-  
-   //Colors for gradient are derived from the provided image
-    gradientView.image = UIImage(named: "myImg")
-  
-  //Default = .backgroundPrimary (See GradientType enum for all possible values)
-  gradientView.gradientTpye = .backgroundPrimary
-  
-  //Defaut = Top. Possible values = Top, Left, Right, Bottom
-  gradientView.gradientStartPoint = .Left
+let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
 
+//Colors for gradient are derived from the provided image
+gradientView.image = UIImage(named: "myImg")
+
+//Default = .backgroundPrimary (See GradientType enum for all possible values)
+gradientView.gradientTpye = .backgroundPrimary
+
+//Defaut = .Top. Possible values = Top, Left, Right, Bottom
+gradientView.gradientStartPoint = .Left
 ```
 
 ### Storyboard
@@ -36,13 +35,13 @@ detailBackground/top            |  secondaryBackground/bottom
 
 ### Protocols
 ```swift
-  optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
+optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
 ```
 
 ### Graident Types
 
 ```swift
-public enum GradientType: String{
+public enum GradientType: String {
   
   //background
   case backgroundPrimary
@@ -62,8 +61,7 @@ public enum GradientType: String{
   case detailSecondary
   //AllColors
   case allColors
-  
-  }
+}
 ```
 
 ## Dependencies
