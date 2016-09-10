@@ -1,3 +1,5 @@
+[![codebeat badge](https://codebeat.co/badges/a41cd890-63e5-4738-9081-51af2bcfc4b8)](https://codebeat.co/projects/github-com-gkye-complimentarygradientview)
+
 # ComplimentaryGradientView
 Create complementary gradients generated from dominant and prominent colors in supplied image.
 Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a> :heart:
