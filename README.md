@@ -17,12 +17,20 @@ detailBackground/top            |  secondaryBackground/bottom
 
 ## Installation
 
+### CocoaPods
 ComplimentaryGradientView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod 'ComplimentaryGradientView'
 ```
+
+### Manually
+
+Download and drop `ComplimentaryGradientView.xcodeproj` into your project
+<b>OR</b> 
+Drag `Source` folder into your project.
+
 
 ## Usage
 
