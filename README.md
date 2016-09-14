@@ -21,10 +21,14 @@ detailBackground/top            |  secondaryBackground/bottom
 ComplimentaryGradientView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+### Swift 2.2
 ```ruby
 pod 'ComplimentaryGradientView'
 ```
-
+### Swift 3.
+```ruby
+pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift3"
+```
 ### Manually
 
 Download and drop `ComplimentaryGradientView.xcodeproj` into your project
@@ -90,4 +94,3 @@ public enum GradientType: String {
 ## License
 
 ComplimentaryGradientView is available under the MIT license. See the LICENSE file for more info.
-
