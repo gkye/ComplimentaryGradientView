@@ -25,7 +25,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   }
   
   func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool) {
-    compGraidentView.bringSubviewToFront(selectedImage)
+    compGraidentView.bringSubview(toFront: selectedImage)
   }
   
 }

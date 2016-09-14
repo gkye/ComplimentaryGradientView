@@ -28,85 +28,85 @@ public enum GradientType: String{
   //AllColors
   case allColors
   
-  func getGradientColors(colors: UIImageColors)->[CGColor]{
+  func getGradientColors(_ colors: UIImageColors)->[CGColor]{
     switch self {
       
     //Background
     case .backgroundPrimary:
-      return [colors.backgroundColor.CGColor, colors.primaryColor.CGColor]
+      return [colors.backgroundColor.cgColor, colors.primaryColor.cgColor]
     case .backgroundSecondary:
-      return [colors.backgroundColor.CGColor, colors.secondaryColor.CGColor]
+      return [colors.backgroundColor.cgColor, colors.secondaryColor.cgColor]
     case .backgroundDetail:
-      return [colors.backgroundColor.CGColor, colors.detailColor.CGColor]
+      return [colors.backgroundColor.cgColor, colors.detailColor.cgColor]
       
     //Primary
     case .primaryBackground:
-      return [colors.primaryColor.CGColor, colors.backgroundColor.CGColor]
+      return [colors.primaryColor.cgColor, colors.backgroundColor.cgColor]
     case .primarySecondary:
-      return [colors.primaryColor.CGColor, colors.secondaryColor.CGColor]
+      return [colors.primaryColor.cgColor, colors.secondaryColor.cgColor]
     case .primaryDetail:
-      return [colors.primaryColor.CGColor, colors.detailColor.CGColor]
+      return [colors.primaryColor.cgColor, colors.detailColor.cgColor]
       
     //Secondary
     case .secondaryBackground:
-      return [colors.secondaryColor.CGColor, colors.backgroundColor.CGColor]
+      return [colors.secondaryColor.cgColor, colors.backgroundColor.cgColor]
     case .secondaryPrimary:
-      return [colors.secondaryColor.CGColor, colors.primaryColor.CGColor]
+      return [colors.secondaryColor.cgColor, colors.primaryColor.cgColor]
     case .secondaryDetail:
-      return [colors.secondaryColor.CGColor, colors.detailColor.CGColor]
+      return [colors.secondaryColor.cgColor, colors.detailColor.cgColor]
       
     //Detail
     case .detailBackground:
-      return [colors.detailColor.CGColor, colors.backgroundColor.CGColor]
+      return [colors.detailColor.cgColor, colors.backgroundColor.cgColor]
     case .detailPrimary:
-      return [colors.detailColor.CGColor, colors.primaryColor.CGColor]
+      return [colors.detailColor.cgColor, colors.primaryColor.cgColor]
     case .detailSecondary:
-      return [colors.detailColor.CGColor, colors.secondaryColor.CGColor]
+      return [colors.detailColor.cgColor, colors.secondaryColor.cgColor]
       
     //All colors
     case .allColors:
-      return [colors.backgroundColor.CGColor,  colors.primaryColor.CGColor, colors.secondaryColor.CGColor, colors.detailColor.CGColor]
+      return [colors.backgroundColor.cgColor,  colors.primaryColor.cgColor, colors.secondaryColor.cgColor, colors.detailColor.cgColor]
       
     }
   }
   
-  mutating func gradientTypeFromString(storyboardValue: String){
-    switch storyboardValue {
+  mutating func gradientTypeFromString(_ storyboardValue: String){
+    switch storyboardValue.lowercased() {
       
       //All colors
-    case allColors.rawValue:
+    case GradientType.allColors.rawValue:
       self = .allColors
       
     //Background
-    case backgroundPrimary.rawValue:
+    case GradientType.backgroundPrimary.rawValue:
       self = .backgroundPrimary
-    case backgroundSecondary.rawValue:
+    case GradientType.backgroundSecondary.rawValue:
       self = .backgroundSecondary
-    case backgroundDetail.rawValue:
+    case GradientType.backgroundDetail.rawValue:
       self = .backgroundDetail
       
     //Primary
-    case primaryBackground.rawValue:
+    case GradientType.primaryBackground.rawValue:
       self = .primaryBackground
-    case primarySecondary.rawValue:
+    case GradientType.primarySecondary.rawValue:
       self = .primarySecondary
-    case primaryDetail.rawValue:
+    case GradientType.primaryDetail.rawValue:
       self = .primaryDetail
       
     //Secondary
-    case secondaryBackground.rawValue:
+    case GradientType.secondaryBackground.rawValue:
       self = .secondaryBackground
-    case secondaryPrimary.rawValue:
+    case GradientType.secondaryPrimary.rawValue:
       self = .secondaryPrimary
-    case secondaryDetail.rawValue:
+    case GradientType.secondaryDetail.rawValue:
       self = .secondaryDetail
       
     //Detail
-    case detailBackground.rawValue:
+    case GradientType.detailBackground.rawValue:
       self = .detailBackground
-    case detailPrimary.rawValue:
+    case GradientType.detailPrimary.rawValue:
       self = .detailPrimary
-    case detailSecondary.rawValue:
+    case GradientType.detailSecondary.rawValue:
       self = .detailSecondary
       
     default:

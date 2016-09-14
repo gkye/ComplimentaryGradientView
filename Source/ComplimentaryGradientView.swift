@@ -7,15 +7,15 @@
 
 
 @objc public protocol ComplimentaryGradientViewDelegate: class {
-  optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
+  @objc optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
 }
 
-public class ComplimentaryGradientView: UIView{
+open class ComplimentaryGradientView: UIView{
     
   //MARK: public
   
   /// Gradients are created from colors are retrived from this image
-  @IBInspectable public var image: UIImage?
+  @IBInspectable open var image: UIImage?
   
   @IBInspectable var type: String! = "backgroundPrimary"{
     didSet{
@@ -23,24 +23,24 @@ public class ComplimentaryGradientView: UIView{
     }
   }
   
-  @IBInspectable var startPoint: String! = "Top"{
+  @IBInspectable var startPoint: String! = "top"{
     didSet{
       gradientStartPoint.startPointEnumFromString(startPoint)
     }
   }
   
-  public var gradientTpye: GradientType = .backgroundPrimary
-  public var gradientStartPoint: GradientStartPoint = .Top
+  open var gradientTpye: GradientType = .backgroundPrimary
+  open var gradientStartPoint: GradientStartPoint = .top
   
   /// Executed fetching of image colors in background if set true. Default = false
-  public var backgroundExecution: Bool = false
+  open var backgroundExecution: Bool = false
   
-  public weak var delegate: ComplimentaryGradientViewDelegate?
+  open weak var delegate: ComplimentaryGradientViewDelegate?
   
   //MARK: private
-  private let gradientLayer: CAGradientLayer! = CAGradientLayer()
+  fileprivate let gradientLayer: CAGradientLayer! = CAGradientLayer()
   
-  public override func layoutSubviews() {
+  open override func layoutSubviews() {
     super.layoutSubviews()
 
     if let img = image{
@@ -49,7 +49,7 @@ public class ComplimentaryGradientView: UIView{
   }
   
   
-  private func configGradient(image: UIImage){
+  fileprivate func configGradient(_ image: UIImage){
     if !backgroundExecution{
       let imageColors = image.getColors()
       configGradientWithStartColor(imageColors)
@@ -61,7 +61,7 @@ public class ComplimentaryGradientView: UIView{
     }
   }
   
-  private func configGradientWithStartColor(imageColors: UIImageColors) {
+  fileprivate func configGradientWithStartColor(_ imageColors: UIImageColors) {
     let gradientColors = gradientTpye.getGradientColors(imageColors)
     
     gradientLayer.removeFromSuperlayer()

@@ -10,24 +10,24 @@ import Foundation
 
 public enum GradientStartPoint: String{
   
-  case Top
-  case Right
-  case Left
-  case Bottom
+  case top
+  case right
+  case left
+  case bottom
   
-  mutating func startPointEnumFromString(storyboardValue: String){
-    let value = storyboardValue.capitalizedString
+  mutating func startPointEnumFromString(_ storyboardValue: String){
+    let value = storyboardValue.lowercased()
     switch value {
-    case Top.rawValue:
-      self = .Top
-    case Right.rawValue:
-      self = .Right
-    case Left.rawValue:
-      self = .Left
-    case Bottom.rawValue:
-      self = .Bottom
+    case GradientStartPoint.top.rawValue:
+      self = .top
+    case GradientStartPoint.right.rawValue:
+      self = .right
+    case GradientStartPoint.left.rawValue:
+      self = .left
+    case GradientStartPoint.bottom.rawValue:
+      self = .bottom
     default:
-      self = .Top
+      self = .top
     }
   }
   
