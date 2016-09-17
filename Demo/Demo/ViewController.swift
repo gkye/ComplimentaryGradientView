@@ -16,8 +16,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   
   let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
   
-  
-  
+
   override func viewDidLoad() {
     super.viewDidLoad()
     //Colors for gradient are derived from the provided image
