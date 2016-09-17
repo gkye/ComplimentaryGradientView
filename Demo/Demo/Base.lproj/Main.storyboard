@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="fPh-3l-pUU">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPh-3l-pUU">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -14,17 +15,14 @@
                         <viewControllerLayoutGuide type="bottom" id="l7t-cG-fY2"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="xn4-gm-pQ4">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="431"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dmb_25th_gorge" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO">
-                                        <rect key="frame" x="30" y="70" width="355" height="291"/>
-                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dmb_25th_gorge" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO"/>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="818-mw-cDO" firstAttribute="top" secondItem="3iV-d6-lA8" secondAttribute="top" constant="70" id="a6x-kK-t4n"/>
                                     <constraint firstItem="818-mw-cDO" firstAttribute="centerY" secondItem="3iV-d6-lA8" secondAttribute="centerY" id="agI-JW-mbg"/>
@@ -33,12 +31,12 @@
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="dmb_25th_gorge"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="bottom"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="secondaryBackground"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="TOP"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="SECONDARYBackground"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="3iV-d6-lA8" secondAttribute="trailing" id="3xK-Hx-JDl"/>
                             <constraint firstItem="l7t-cG-fY2" firstAttribute="top" secondItem="3iV-d6-lA8" secondAttribute="bottom" constant="305" id="eH6-8Y-udZ"/>
@@ -47,7 +45,6 @@
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
                         <outlet property="compGraidentView" destination="3iV-d6-lA8" id="LNY-9E-peR"/>
                         <outlet property="selectedImage" destination="818-mw-cDO" id="Blz-BD-6C1"/>
