@@ -23,11 +23,11 @@ it, simply add the following line to your Podfile:
 
 ### Swift 2.2
 ```ruby
-pod 'ComplimentaryGradientView'
+pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift2"
 ```
 ### Swift 3.
 ```ruby
-pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift3"
+pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git"
 ```
 ### Manually
 
@@ -94,7 +94,3 @@ public enum GradientType: String {
 ## License
 
 ComplimentaryGradientView is available under the MIT license. See the LICENSE file for more info.
-<<<<<<< HEAD
-
-=======
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
