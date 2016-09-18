@@ -94,4 +94,7 @@ public enum GradientType: String {
 ## License
 
 ComplimentaryGradientView is available under the MIT license. See the LICENSE file for more info.
+<<<<<<< HEAD
 
+=======
+>>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca

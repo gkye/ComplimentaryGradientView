@@ -28,7 +28,11 @@ class ComplimentaryGradientViewTests: XCTestCase {
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
+<<<<<<< HEAD
         self.measureBlock {
+=======
+        self.measure {
+>>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
             // Put the code you want to measure the time of here.
         }
     }
