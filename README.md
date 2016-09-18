@@ -26,8 +26,10 @@ it, simply add the following line to your Podfile:
 pod 'ComplimentaryGradientView'
 ```
 ### Swift 3.
+
+#### Currently having issues with `CocoaPods` validation ** Download straight from master 
 ```ruby
-pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift3"
+pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git"
 ```
 ### Manually
 
