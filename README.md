@@ -23,11 +23,11 @@ it, simply add the following line to your Podfile:
 
 ### Swift 2.2
 ```ruby
-pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift2"
+pod 'ComplimentaryGradientView'
 ```
 ### Swift 3.
 ```ruby
-pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git"
+pod 'ComplimentaryGradientView', :git => "https://github.com/gkye/ComplimentaryGradientView.git", :branch => "swift3"
 ```
 ### Manually
 

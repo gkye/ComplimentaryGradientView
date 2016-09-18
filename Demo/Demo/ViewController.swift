@@ -16,12 +16,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   
   let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
   
-<<<<<<< HEAD
-  
-  
-=======
 
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
   override func viewDidLoad() {
     super.viewDidLoad()
     //Colors for gradient are derived from the provided image
@@ -29,11 +24,7 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
   }
   
   func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool) {
-<<<<<<< HEAD
-    compGraidentView.bringSubviewToFront(selectedImage)
-=======
     compGraidentView.bringSubview(toFront: selectedImage)
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
   }
   
 }

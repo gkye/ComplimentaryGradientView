@@ -242,28 +242,18 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-<<<<<<< HEAD
-				LastUpgradeCheck = 0730;
-=======
 				LastUpgradeCheck = 0800;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				ORGANIZATIONNAME = "George Kye";
 				TargetAttributes = {
 					5E3D42891D6BF8C80058B0DB = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = U6DZ66N298;
-<<<<<<< HEAD
-=======
 						LastSwiftMigration = 0800;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 					};
 					5E3D42931D6BF8C80058B0DB = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = U6DZ66N298;
-<<<<<<< HEAD
-=======
 						LastSwiftMigration = 0800;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 					};
 					5E3D42AD1D6BFA2C0058B0DB = {
 						CreatedOnToolsVersion = 7.3;
@@ -393,15 +383,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-<<<<<<< HEAD
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-=======
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -449,15 +434,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
-<<<<<<< HEAD
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-=======
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -477,10 +457,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-<<<<<<< HEAD
-=======
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -492,10 +469,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-<<<<<<< HEAD
-=======
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -507,10 +481,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-<<<<<<< HEAD
-=======
 				SWIFT_VERSION = 3.0;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 			};
 			name = Debug;
 		};
@@ -518,10 +489,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-<<<<<<< HEAD
-=======
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -532,10 +500,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.ComplimentaryGradientView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-<<<<<<< HEAD
-=======
 				SWIFT_VERSION = 3.0;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 			};
 			name = Release;
 		};
@@ -546,10 +511,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.ComplimentaryGradientViewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
-=======
 				SWIFT_VERSION = 3.0;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 			};
 			name = Debug;
 		};
@@ -560,10 +522,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.ComplimentaryGradientViewTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-<<<<<<< HEAD
-=======
 				SWIFT_VERSION = 3.0;
->>>>>>> 81d9d137abfc84b01b10115f7fd45ceacd5211ca
 			};
 			name = Release;
 		};
