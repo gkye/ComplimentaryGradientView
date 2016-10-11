@@ -6,6 +6,7 @@
 //  Copyright © 2016 George Kye. All rights reserved.
 //
 import Foundation
+import UIKit
 
 public enum GradientType: String{
   

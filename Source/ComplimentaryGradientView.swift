@@ -5,6 +5,8 @@
 //  Created by George Kye on 2016-08-22.
 //  Copyright © 2016 George Kye. All rights reserved.
 
+import Foundation
+import UIKit
 
 @objc public protocol ComplimentaryGradientViewDelegate: class {
   @objc optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
@@ -18,7 +20,13 @@ open class ComplimentaryGradientView: UIView{
   
   
   /// Gradients are created from colors are retrived from this image
-  @IBInspectable open var image: UIImage?
+  @IBInspectable open var image: UIImage?{
+    didSet{
+      if let img = image{
+        configGradient(img)
+      }
+    }
+  }
   
   @IBInspectable var type: String! = "backgroundPrimary"{
     didSet{
