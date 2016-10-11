@@ -20,7 +20,7 @@
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dmb_25th_gorge" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broncos_panthers_br" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO"/>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -30,9 +30,9 @@
                                     <constraint firstItem="818-mw-cDO" firstAttribute="centerX" secondItem="3iV-d6-lA8" secondAttribute="centerX" id="qt5-eB-Gxk"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="dmb_25th_gorge"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="TOP"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="SECONDARYBackground"/>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="image" value="broncos_panthers_br"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="left"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="type" value="backgroundPrimary"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
@@ -52,10 +52,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="si3-gR-I52" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="285" y="306"/>
+            <point key="canvasLocation" x="-97" y="320"/>
         </scene>
     </scenes>
     <resources>
-        <image name="dmb_25th_gorge" width="800" height="600"/>
+        <image name="broncos_panthers_br" width="800" height="600"/>
     </resources>
 </document>

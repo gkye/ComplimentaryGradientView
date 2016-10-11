@@ -11,8 +11,11 @@
 }
 
 open class ComplimentaryGradientView: UIView{
-    
+  
   //MARK: public
+  
+  fileprivate let gradientLayer: CAGradientLayer! = CAGradientLayer()
+  
   
   /// Gradients are created from colors are retrived from this image
   @IBInspectable open var image: UIImage?
@@ -38,11 +41,9 @@ open class ComplimentaryGradientView: UIView{
   open weak var delegate: ComplimentaryGradientViewDelegate?
   
   //MARK: private
-  fileprivate let gradientLayer: CAGradientLayer! = CAGradientLayer()
   
   open override func layoutSubviews() {
     super.layoutSubviews()
-
     if let img = image{
       configGradient(img)
     }

@@ -65,13 +65,14 @@ public enum GradientType: String{
       
     //All colors
     case .allColors:
-      return [colors.backgroundColor.cgColor,  colors.primaryColor.cgColor, colors.secondaryColor.cgColor, colors.detailColor.cgColor]
+      return [colors.primaryColor.cgColor, colors.backgroundColor.cgColor, colors.secondaryColor.cgColor, colors.detailColor.cgColor]
       
     }
   }
   
   mutating func gradientTypeFromString(_ storyboardValue: String){
-    switch storyboardValue.lowercased() {
+    
+    switch storyboardValue{
       
       //All colors
     case GradientType.allColors.rawValue:
