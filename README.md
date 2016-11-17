@@ -16,7 +16,7 @@ detailBackground/top            |  secondaryBackground/bottom
 
 ## Demo
 #### Sorry for the poor quality gif 
-[Demo](http://i.imgur.com/GnsHRCk.gifv)
+![Demo](http://i.imgur.com/GnsHRCk.gifv)
 
 
 ## Installation
