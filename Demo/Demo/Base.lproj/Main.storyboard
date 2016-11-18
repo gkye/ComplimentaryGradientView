@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPh-3l-pUU">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fPh-3l-pUU">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -19,22 +19,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="3iV-d6-lA8" customClass="ComplimentaryGradientView" customModule="ComplimentaryGradientView">
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="broncos_panthers_br" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO"/>
-                                </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstItem="818-mw-cDO" firstAttribute="top" secondItem="3iV-d6-lA8" secondAttribute="top" constant="70" id="a6x-kK-t4n"/>
-                                    <constraint firstItem="818-mw-cDO" firstAttribute="centerY" secondItem="3iV-d6-lA8" secondAttribute="centerY" id="agI-JW-mbg"/>
-                                    <constraint firstItem="818-mw-cDO" firstAttribute="leading" secondItem="3iV-d6-lA8" secondAttribute="leading" constant="30" id="hXY-aB-Z25"/>
-                                    <constraint firstItem="818-mw-cDO" firstAttribute="centerX" secondItem="3iV-d6-lA8" secondAttribute="centerX" id="qt5-eB-Gxk"/>
-                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="image" keyPath="image" value="broncos_panthers_br"/>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="left"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="top"/>
                                     <userDefinedRuntimeAttribute type="string" keyPath="type" value="backgroundPrimary"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="broncos_panthers_br" translatesAutoresizingMaskIntoConstraints="NO" id="818-mw-cDO">
+                                <frame key="frameInset" minX="30" minY="70" width="315" height="222"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -52,7 +47,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="si3-gR-I52" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-97" y="320"/>
+            <point key="canvasLocation" x="-94" y="255"/>
         </scene>
     </scenes>
     <resources>

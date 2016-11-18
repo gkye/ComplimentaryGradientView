@@ -12,6 +12,7 @@ import UIKit
   @objc optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
 }
 
+@IBDesignable
 open class ComplimentaryGradientView: UIView{
   
   //MARK: public

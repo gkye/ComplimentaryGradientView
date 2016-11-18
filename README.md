@@ -14,6 +14,10 @@ detailBackground/top            |  secondaryBackground/bottom
 ![](https://cloud.githubusercontent.com/assets/14007152/18399974/c8a7ba48-76a1-11e6-86e8-d1df76092855.png)  |  ![](https://cloud.githubusercontent.com/assets/14007152/18400039/23b266e0-76a2-11e6-819f-9d53f5376e54.png)
 
 
+## Demo
+#### Sorry for the poor quality gif 
+![Demo](http://i.imgur.com/GnsHRCk.gifv)
+
 
 ## Installation
 
@@ -96,3 +100,5 @@ public enum GradientType: String {
 ## License
 
 ComplimentaryGradientView is available under the MIT license. See the LICENSE file for more info.
+
+
