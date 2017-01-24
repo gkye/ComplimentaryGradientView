@@ -31,7 +31,7 @@ open class ComplimentaryGradientView: UIView{
   
   @IBInspectable var type: String! = "backgroundPrimary"{
     didSet{
-      gradientTpye.gradientTypeFromString(type)
+      gradientType.gradientTypeFromString(type)
     }
   }
   
@@ -41,7 +41,7 @@ open class ComplimentaryGradientView: UIView{
     }
   }
   
-  open var gradientTpye: GradientType = .backgroundPrimary
+  open var gradientType: GradientType = .backgroundPrimary
   open var gradientStartPoint: GradientStartPoint = .top
   
   /// Executed fetching of image colors in background if set true. Default = false
@@ -72,7 +72,7 @@ open class ComplimentaryGradientView: UIView{
   }
   
   fileprivate func configGradientWithStartColor(_ imageColors: UIImageColors) {
-    let gradientColors = gradientTpye.getGradientColors(imageColors)
+    let gradientColors = gradientType.getGradientColors(imageColors)
     
     gradientLayer.removeFromSuperlayer()
     gradientLayer.frame.size = self.frame.size
