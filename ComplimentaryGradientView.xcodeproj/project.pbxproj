@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36BFC2F81E37A85D003A24CC /* CAGraidentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */; };
+		36BFC2F91E37A85D003A24CC /* ComplimentaryGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A41D6BF9480058B0DB /* ComplimentaryGradientView.swift */; };
+		36BFC2FA1E37A85D003A24CC /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */; };
+		36BFC2FB1E37A85D003A24CC /* GradientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A81D6BF9830058B0DB /* GradientType.swift */; };
+		36BFC2FC1E37A85D003A24CC /* GradientStartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712AD1D6E648700274B85 /* GradientStartPoint.swift */; };
 		5CC5CB601E37592900FE0206 /* ComplimentaryGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CC5CB571E37592800FE0206 /* ComplimentaryGradientView.framework */; };
 		5CC5CB651E37592900FE0206 /* ComplimentaryGradientView_tvOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC5CB641E37592900FE0206 /* ComplimentaryGradientView_tvOSTests.swift */; };
 		5CC5CB671E37592900FE0206 /* ComplimentaryGradientView tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CC5CB591E37592800FE0206 /* ComplimentaryGradientView tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -444,6 +449,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36BFC2FA1E37A85D003A24CC /* UIImageColors.swift in Sources */,
+				36BFC2FB1E37A85D003A24CC /* GradientType.swift in Sources */,
+				36BFC2FC1E37A85D003A24CC /* GradientStartPoint.swift in Sources */,
+				36BFC2F81E37A85D003A24CC /* CAGraidentLayer.swift in Sources */,
+				36BFC2F91E37A85D003A24CC /* ComplimentaryGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -558,6 +568,7 @@
 		5CC5CB6A1E37592900FE0206 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				INFOPLIST_FILE = "ComplimentaryGradientView tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -573,6 +584,7 @@
 		5CC5CB6B1E37592900FE0206 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				INFOPLIST_FILE = "ComplimentaryGradientView tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -797,6 +809,7 @@
 				5CC5CB691E37592900FE0206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5CC5CB6D1E37592900FE0206 /* Build configuration list for PBXNativeTarget "ComplimentaryGradientView tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -805,6 +818,7 @@
 				5CC5CB6B1E37592900FE0206 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E3D42841D6BF8C80058B0DB /* Build configuration list for PBXProject "ComplimentaryGradientView" */ = {
 			isa = XCConfigurationList;
