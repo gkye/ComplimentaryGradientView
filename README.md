@@ -54,8 +54,8 @@ gradientView.image = UIImage(named: "myImg")
 //Default = .backgroundPrimary (See GradientType enum for all possible values)
 gradientView.gradientTpye = .backgroundPrimary
 
-//Defaut = .Top. Possible values = Top, Left, Right, Bottom
-gradientView.gradientStartPoint = .Left
+//Defaut = .Top. Possible values = Ttp, left, right, bottom
+gradientView.gradientStartPoint = .left
 ```
 
 ### Storyboard
