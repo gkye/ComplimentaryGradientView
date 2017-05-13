@@ -1,6 +1,16 @@
 # Change Log
 All notable changes to this project will be documented in this file.
 
+### [0.1.6](https://github.com/gkye/ComplimentaryGradientView/releases/tag/0.1.6)
+
+#### API breaking changes
+None
+#### Enhancement
+* Added CustomPoint `typealias` to support custom start and end points programmatically
+* Updated Demo
+#### Bugfixes
+None
+
 
 ### [0.1.4](https://github.com/gkye/ComplimentaryGradientView/releases/tag/0.1.4)
 
