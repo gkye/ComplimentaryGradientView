@@ -18,6 +18,8 @@ class ViewController: UIViewController, ComplimentaryGradientViewDelegate {
     super.viewDidLoad()
     //Colors for gradient are derived from the provided image
     compGraidentView.delegate = self
+    let custom = (startPoint: CGPoint(x: 0, y: 0.2), endPoint: CGPoint(x: 1, y: 1.2))
+    compGraidentView.customPoint = custom
   }
   
   func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool) {
