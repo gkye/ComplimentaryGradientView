@@ -11,6 +11,16 @@ None
 #### Bugfixes
 None
 
+### [0.1.5](https://github.com/gkye/ComplimentaryGradientView/releases/tag/0.1.5)
+
+#### API breaking changes
+None
+#### Enhancement
+* Added TV OS Supporr thanks to @dunqi
+* Rename gradientTpye to gradientType
+#### Bugfixes
+None
+
 
 ### [0.1.4](https://github.com/gkye/ComplimentaryGradientView/releases/tag/0.1.4)
 
