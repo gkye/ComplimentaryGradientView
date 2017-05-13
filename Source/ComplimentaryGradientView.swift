@@ -12,6 +12,8 @@ import UIKit
   @objc optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
 }
 
+public typealias CustomPoints = (startPoint: CGPoint, endPoint: CGPoint)
+
 @IBDesignable
 open class ComplimentaryGradientView: UIView{
   
@@ -43,6 +45,8 @@ open class ComplimentaryGradientView: UIView{
   
   open var gradientType: GradientType = .backgroundPrimary
   open var gradientStartPoint: GradientStartPoint = .top
+  
+  open var customPoint: CustomPoints?
   
   /// Executed fetching of image colors in background if set true. Default = false
   open var backgroundExecution: Bool = false
@@ -77,7 +81,7 @@ open class ComplimentaryGradientView: UIView{
     gradientLayer.removeFromSuperlayer()
     gradientLayer.frame.size = self.frame.size
     gradientLayer.colors = gradientColors
-    gradientLayer.addStartPointsToGradient(gradientStartPoint)
+    gradientLayer.addStartPointsToGradient(gradientStartPoint, customPoint: customPoint)
     self.layer.addSublayer(gradientLayer)
     delegate?.complimentaryGradientView?(didSetGradient: self, gradientSet: true)
   }
