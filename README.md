@@ -25,9 +25,13 @@ detailBackground/top            |  secondaryBackground/bottom
 ComplimentaryGradientView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-### Swift3.
+### Swift 4
 ```ruby
 pod 'ComplimentaryGradientView'
+```
+### Swift3.
+```ruby
+pod 'ComplimentaryGradientView', '~> 0.1.7'
 ```
 
 ### Swift 2.2
