@@ -11,8 +11,11 @@ import UIKit
 
 extension CAGradientLayer{
   
+  /// Set start points to CAGradientLayer
+  /// - Parameters:
+  ///   - start_point: Default start points. See `GradientStartPoint` enum
+  ///   - customPoint: CustomStartPoint.
   func addStartPointsToGradient(_ start_point: GradientStartPoint, customPoint: CustomPoints? = nil){
-    
     guard let custom = customPoint else{
     
       switch start_point{

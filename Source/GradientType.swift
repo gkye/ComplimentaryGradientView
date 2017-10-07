@@ -34,39 +34,39 @@ public enum GradientType: String{
       
     //Background
     case .backgroundPrimary:
-      return [colors.backgroundColor.cgColor, colors.primaryColor.cgColor]
+      return [colors.background.cgColor, colors.primary.cgColor]
     case .backgroundSecondary:
-      return [colors.backgroundColor.cgColor, colors.secondaryColor.cgColor]
+      return [colors.background.cgColor, colors.secondary.cgColor]
     case .backgroundDetail:
-      return [colors.backgroundColor.cgColor, colors.detailColor.cgColor]
+      return [colors.background.cgColor, colors.detail.cgColor]
       
     //Primary
     case .primaryBackground:
-      return [colors.primaryColor.cgColor, colors.backgroundColor.cgColor]
+      return [colors.primary.cgColor, colors.background.cgColor]
     case .primarySecondary:
-      return [colors.primaryColor.cgColor, colors.secondaryColor.cgColor]
+      return [colors.primary.cgColor, colors.secondary.cgColor]
     case .primaryDetail:
-      return [colors.primaryColor.cgColor, colors.detailColor.cgColor]
+      return [colors.primary.cgColor, colors.detail.cgColor]
       
     //Secondary
     case .secondaryBackground:
-      return [colors.secondaryColor.cgColor, colors.backgroundColor.cgColor]
+      return [colors.secondary.cgColor, colors.background.cgColor]
     case .secondaryPrimary:
-      return [colors.secondaryColor.cgColor, colors.primaryColor.cgColor]
+      return [colors.secondary.cgColor, colors.primary.cgColor]
     case .secondaryDetail:
-      return [colors.secondaryColor.cgColor, colors.detailColor.cgColor]
+      return [colors.secondary.cgColor, colors.detail.cgColor]
       
     //Detail
     case .detailBackground:
-      return [colors.detailColor.cgColor, colors.backgroundColor.cgColor]
+      return [colors.detail.cgColor, colors.background.cgColor]
     case .detailPrimary:
-      return [colors.detailColor.cgColor, colors.primaryColor.cgColor]
+      return [colors.detail.cgColor, colors.primary.cgColor]
     case .detailSecondary:
-      return [colors.detailColor.cgColor, colors.secondaryColor.cgColor]
+      return [colors.detail.cgColor, colors.secondary.cgColor]
       
     //All colors
     case .allColors:
-      return [colors.primaryColor.cgColor, colors.backgroundColor.cgColor, colors.secondaryColor.cgColor, colors.detailColor.cgColor]
+      return [colors.primary.cgColor, colors.background.cgColor, colors.secondary.cgColor, colors.detail.cgColor]
       
     }
   }
