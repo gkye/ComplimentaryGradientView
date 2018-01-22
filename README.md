@@ -2,7 +2,7 @@
 
 # ComplimentaryGradientView
 Create complementary gradients generated from dominant and prominent colors in supplied image.
-Inspired by <a href="http://benhowdle.im/grade/"> Grade.js </a>:heart:
+Inspired by <a href="https://github.com/benhowdle89/grade"> Grade.js </a>:heart:
 
 
 allColors/left            |  primaryBackground/top
