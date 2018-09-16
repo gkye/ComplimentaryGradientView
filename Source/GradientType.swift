@@ -8,111 +8,74 @@
 import Foundation
 import UIKit
 
-public enum GradientType: String{
+public typealias StoryboardGradient = ([CGColor], GradientType)
+
+public enum GradientVariant: String {
+  case primary
+  case secondary
+  case background
+  case detail
   
-  //background
-  case backgroundPrimary
-  case backgroundSecondary
-  case backgroundDetail
-  //primary
-  case primaryBackground
-  case primarySecondary
-  case primaryDetail
-  //secondary
-  case secondaryBackground
-  case secondaryPrimary
-  case secondaryDetail
-  //detail
-  case detailBackground
-  case detailPrimary
-  case detailSecondary
-  //AllColors
-  case allColors
-  
-  func getGradientColors(_ colors: UIImageColors)->[CGColor]{
+  func color(_ imageColors: UIImageColors) -> UIColor {
     switch self {
-      
-    //Background
-    case .backgroundPrimary:
-      return [colors.background.cgColor, colors.primary.cgColor]
-    case .backgroundSecondary:
-      return [colors.background.cgColor, colors.secondary.cgColor]
-    case .backgroundDetail:
-      return [colors.background.cgColor, colors.detail.cgColor]
-      
-    //Primary
-    case .primaryBackground:
-      return [colors.primary.cgColor, colors.background.cgColor]
-    case .primarySecondary:
-      return [colors.primary.cgColor, colors.secondary.cgColor]
-    case .primaryDetail:
-      return [colors.primary.cgColor, colors.detail.cgColor]
-      
-    //Secondary
-    case .secondaryBackground:
-      return [colors.secondary.cgColor, colors.background.cgColor]
-    case .secondaryPrimary:
-      return [colors.secondary.cgColor, colors.primary.cgColor]
-    case .secondaryDetail:
-      return [colors.secondary.cgColor, colors.detail.cgColor]
-      
-    //Detail
-    case .detailBackground:
-      return [colors.detail.cgColor, colors.background.cgColor]
-    case .detailPrimary:
-      return [colors.detail.cgColor, colors.primary.cgColor]
-    case .detailSecondary:
-      return [colors.detail.cgColor, colors.secondary.cgColor]
-      
-    //All colors
-    case .allColors:
-      return [colors.primary.cgColor, colors.background.cgColor, colors.secondary.cgColor, colors.detail.cgColor]
-      
-    }
-  }
-  
-  mutating func gradientTypeFromString(_ storyboardValue: String){
-    
-    switch storyboardValue{
-      
-      //All colors
-    case GradientType.allColors.rawValue:
-      self = .allColors
-      
-    //Background
-    case GradientType.backgroundPrimary.rawValue:
-      self = .backgroundPrimary
-    case GradientType.backgroundSecondary.rawValue:
-      self = .backgroundSecondary
-    case GradientType.backgroundDetail.rawValue:
-      self = .backgroundDetail
-      
-    //Primary
-    case GradientType.primaryBackground.rawValue:
-      self = .primaryBackground
-    case GradientType.primarySecondary.rawValue:
-      self = .primarySecondary
-    case GradientType.primaryDetail.rawValue:
-      self = .primaryDetail
-      
-    //Secondary
-    case GradientType.secondaryBackground.rawValue:
-      self = .secondaryBackground
-    case GradientType.secondaryPrimary.rawValue:
-      self = .secondaryPrimary
-    case GradientType.secondaryDetail.rawValue:
-      self = .secondaryDetail
-      
-    //Detail
-    case GradientType.detailBackground.rawValue:
-      self = .detailBackground
-    case GradientType.detailPrimary.rawValue:
-      self = .detailPrimary
-    case GradientType.detailSecondary.rawValue:
-      self = .detailSecondary
-      
-    default:
-      self = .backgroundPrimary
+    case .primary:
+      return imageColors.primary
+    case .secondary:
+      return imageColors.secondary
+    case .background:
+      return imageColors.background
+    case .detail:
+      return imageColors.detail
     }
   }
 }
+
+
+public enum GradientType {
+  case all
+  case colors(start: GradientVariant, end: GradientVariant)
+  
+  func gradientColors(_ colors: UIImageColors)-> [CGColor] {
+    switch self {
+    case .all:
+      let all: [GradientVariant] = [.primary, .secondary, .background, .detail]
+      return all.map{$0.color(colors).cgColor}
+    case .colors(start: let start, end: let end):
+      return [start, end].map{$0.color(colors).cgColor}
+    }
+  }
+  
+  
+  /// Storyboard value are split by dot delimter.
+  ///  First index = start color, Second index = end color
+  /// - Parameter storyboardValue: IBInspectable value
+  static func gradientFrom(storyboardValue: String, _ colors: UIImageColors) -> StoryboardGradient? {
+    if storyboardValue.lowercased() == "all" {
+      return (GradientType.all.gradientColors(colors), .all)
+    }else {
+      let values: [String] = storyboardValue.components(separatedBy: ".")
+      guard values.count == 2,
+        let start = values.first,
+        values.indices.contains(1) else {
+          print("ComplimentaryGradientView: GRADIENT TYPE VALUE: \"\(storyboardValue)\" DOESNT NO MATCH THE EXPECT FORMAT")
+          return nil
+      }
+      
+      var gradientColors: [GradientVariant] = []
+      [start, values[1]].forEach { rawValue in
+        guard let type = GradientVariant.init(rawValue: rawValue) else {
+          print("ComplimentaryGradientView: GRADIENT TYPE: \"\(storyboardValue)\" NOT FOUND")
+          return
+        }
+        gradientColors.append(type)
+      }
+      
+      guard let s = gradientColors.first, gradientColors.indices.contains(1) else {  return nil }
+      return (
+        gradientColors.compactMap{$0.color(colors).cgColor},
+        GradientType.colors(start: s, end: gradientColors[1])
+      )
+    }
+  }
+}
+

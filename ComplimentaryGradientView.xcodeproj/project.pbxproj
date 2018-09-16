@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18A757272151BDEE002EB891 /* ComplimentaryGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A41D6BF9480058B0DB /* ComplimentaryGradientView.swift */; };
+		18A757282151BE39002EB891 /* GradientType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A81D6BF9830058B0DB /* GradientType.swift */; };
+		18A757292151BE41002EB891 /* CAGraidentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */; };
+		18A7572A2151BE47002EB891 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */; };
+		18A7572B2151BE52002EB891 /* GradientStartPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712AD1D6E648700274B85 /* GradientStartPoint.swift */; };
 		36BFC2F81E37A85D003A24CC /* CAGraidentLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E0712B21D6E6B7800274B85 /* CAGraidentLayer.swift */; };
 		36BFC2F91E37A85D003A24CC /* ComplimentaryGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A41D6BF9480058B0DB /* ComplimentaryGradientView.swift */; };
 		36BFC2FA1E37A85D003A24CC /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */; };
@@ -40,13 +45,6 @@
 			remoteGlobalIDString = 5E3D42891D6BF8C80058B0DB;
 			remoteInfo = ComplimentaryGradientView;
 		};
-		5E3D42C21D6BFA2C0058B0DB /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E3D42811D6BF8C80058B0DB /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E3D42AD1D6BFA2C0058B0DB;
-			remoteInfo = Demo;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -67,8 +65,6 @@
 		5E3D42A41D6BF9480058B0DB /* ComplimentaryGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComplimentaryGradientView.swift; sourceTree = "<group>"; };
 		5E3D42A61D6BF95C0058B0DB /* UIImageColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 		5E3D42A81D6BF9830058B0DB /* GradientType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientType.swift; sourceTree = "<group>"; };
-		5E3D42AE1D6BFA2C0058B0DB /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E3D42C11D6BFA2C0058B0DB /* DemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,20 +95,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3D42951D6BF8C80058B0DB /* ComplimentaryGradientView.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42AB1D6BFA2C0058B0DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42BE1D6BFA2C0058B0DB /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,15 +153,15 @@
 				5CC5CB631E37592900FE0206 /* ComplimentaryGradientView tvOSTests */,
 				5E3D428B1D6BF8C80058B0DB /* Products */,
 			);
+			indentWidth = 2;
 			sourceTree = "<group>";
+			tabWidth = 2;
 		};
 		5E3D428B1D6BF8C80058B0DB /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				5E3D428A1D6BF8C80058B0DB /* ComplimentaryGradientView.framework */,
 				5E3D42941D6BF8C80058B0DB /* ComplimentaryGradientViewTests.xctest */,
-				5E3D42AE1D6BFA2C0058B0DB /* Demo.app */,
-				5E3D42C11D6BFA2C0058B0DB /* DemoTests.xctest */,
 				5CC5CB571E37592800FE0206 /* ComplimentaryGradientView.framework */,
 				5CC5CB5F1E37592800FE0206 /* ComplimentaryGradientView tvOSTests.xctest */,
 			);
@@ -302,41 +284,6 @@
 			productReference = 5E3D42941D6BF8C80058B0DB /* ComplimentaryGradientViewTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5E3D42AD1D6BFA2C0058B0DB /* Demo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E3D42C81D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "Demo" */;
-			buildPhases = (
-				5E3D42AA1D6BFA2C0058B0DB /* Sources */,
-				5E3D42AB1D6BFA2C0058B0DB /* Frameworks */,
-				5E3D42AC1D6BFA2C0058B0DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Demo;
-			productName = Demo;
-			productReference = 5E3D42AE1D6BFA2C0058B0DB /* Demo.app */;
-			productType = "com.apple.product-type.application";
-		};
-		5E3D42C01D6BFA2C0058B0DB /* DemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E3D42CB1D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "DemoTests" */;
-			buildPhases = (
-				5E3D42BD1D6BFA2C0058B0DB /* Sources */,
-				5E3D42BE1D6BFA2C0058B0DB /* Frameworks */,
-				5E3D42BF1D6BFA2C0058B0DB /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E3D42C31D6BFA2C0058B0DB /* PBXTargetDependency */,
-			);
-			name = DemoTests;
-			productName = DemoTests;
-			productReference = 5E3D42C11D6BFA2C0058B0DB /* DemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -344,7 +291,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1000;
 				ORGANIZATIONNAME = "George Kye";
 				TargetAttributes = {
 					5CC5CB561E37592800FE0206 = {
@@ -365,15 +312,6 @@
 						DevelopmentTeam = U6DZ66N298;
 						LastSwiftMigration = 0900;
 					};
-					5E3D42AD1D6BFA2C0058B0DB = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = U6DZ66N298;
-					};
-					5E3D42C01D6BFA2C0058B0DB = {
-						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = U6DZ66N298;
-						TestTargetID = 5E3D42AD1D6BFA2C0058B0DB;
-					};
 				};
 			};
 			buildConfigurationList = 5E3D42841D6BF8C80058B0DB /* Build configuration list for PBXProject "ComplimentaryGradientView" */;
@@ -391,8 +329,6 @@
 			targets = (
 				5E3D42891D6BF8C80058B0DB /* ComplimentaryGradientView */,
 				5E3D42931D6BF8C80058B0DB /* ComplimentaryGradientViewTests */,
-				5E3D42AD1D6BFA2C0058B0DB /* Demo */,
-				5E3D42C01D6BFA2C0058B0DB /* DemoTests */,
 				5CC5CB561E37592800FE0206 /* ComplimentaryGradientView tvOS */,
 				5CC5CB5E1E37592800FE0206 /* ComplimentaryGradientView tvOSTests */,
 			);
@@ -422,20 +358,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5E3D42921D6BF8C80058B0DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42AC1D6BFA2C0058B0DB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42BF1D6BFA2C0058B0DB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -482,20 +404,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E3D429A1D6BF8C80058B0DB /* ComplimentaryGradientViewTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42AA1D6BFA2C0058B0DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E3D42BD1D6BFA2C0058B0DB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				18A757272151BDEE002EB891 /* ComplimentaryGradientView.swift in Sources */,
+				18A757282151BE39002EB891 /* GradientType.swift in Sources */,
+				18A757292151BE41002EB891 /* CAGraidentLayer.swift in Sources */,
+				18A7572A2151BE47002EB891 /* UIImageColors.swift in Sources */,
+				18A7572B2151BE52002EB891 /* GradientStartPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,11 +424,6 @@
 			isa = PBXTargetDependency;
 			target = 5E3D42891D6BF8C80058B0DB /* ComplimentaryGradientView */;
 			targetProxy = 5E3D42961D6BF8C80058B0DB /* PBXContainerItemProxy */;
-		};
-		5E3D42C31D6BFA2C0058B0DB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E3D42AD1D6BFA2C0058B0DB /* Demo */;
-			targetProxy = 5E3D42C21D6BFA2C0058B0DB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -609,12 +517,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -666,12 +576,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -721,7 +633,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -742,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.ComplimentaryGradientView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
-				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -768,52 +680,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_SWIFT3_OBJC_INFERENCE = On;
 				SWIFT_VERSION = 4.0;
-			};
-			name = Release;
-		};
-		5E3D42C91D6BFA2C0058B0DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		5E3D42CA1D6BFA2C0058B0DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = Demo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.Demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Release;
-		};
-		5E3D42CC1D6BFA2C0058B0DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.DemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
-			};
-			name = Debug;
-		};
-		5E3D42CD1D6BFA2C0058B0DB /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				INFOPLIST_FILE = DemoTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "George-Kye-Asiamah.DemoTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Demo.app/Demo";
 			};
 			name = Release;
 		};
@@ -861,24 +727,6 @@
 			buildConfigurations = (
 				5E3D42A21D6BF8C80058B0DB /* Debug */,
 				5E3D42A31D6BF8C80058B0DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E3D42C81D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "Demo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E3D42C91D6BFA2C0058B0DB /* Debug */,
-				5E3D42CA1D6BFA2C0058B0DB /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E3D42CB1D6BFA2C0058B0DB /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E3D42CC1D6BFA2C0058B0DB /* Debug */,
-				5E3D42CD1D6BFA2C0058B0DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

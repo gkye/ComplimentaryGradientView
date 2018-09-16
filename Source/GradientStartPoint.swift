@@ -19,7 +19,6 @@ public enum GradientStartPoint: String{
   case bottomRight
   case bottomLeft
   
-  
   mutating func startPointEnumFromString(_ storyboardValue: String){
     switch storyboardValue {
     case GradientStartPoint.top.rawValue:
