@@ -29,9 +29,9 @@
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="333.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="panclajn-16-v01-2_1x"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="steven-roe-1058281-unsplash"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="gradient_type" value="all"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="startPoint" value="top"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="gradient_type" value="detail.background"/>
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0j4-x3-8yk">
@@ -176,6 +176,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="panclajn-16-v01-2_1x" width="400" height="300"/>
+        <image name="steven-roe-1058281-unsplash" width="5059" height="5060"/>
     </resources>
 </document>
