@@ -25,9 +25,10 @@ detailBackground/top            |  secondaryBackground/bottom
 ComplimentaryGradientView is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
-### Swift 4
+### Swift 4.2
 ```ruby
-pod 'ComplimentaryGradientView'
+pod 'ComplimentaryGradientView', '~> 3.0'
+
 ```
 ### Swift3.
 ```ruby
@@ -55,11 +56,13 @@ let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 30
 //Colors for gradient are derived from the provided image
 gradientView.image = UIImage(named: "myImg")
 
-//Default = .backgroundPrimary (See GradientType enum for all possible values)
-gradientView.gradientTpye = .backgroundPrimary
+gradientView.gradientTpye = .colors(start: .primary, end: .secondary)
 
-//Defaut = .Top. Possible values = Ttp, left, right, bottom
+// Default = `.left`
 gradientView.gradientStartPoint = .left
+
+// Default = `.high`
+gradientView.quality = .high
 ```
 
 ### Storyboard
