@@ -70,37 +70,6 @@ gradientView.quality = .high
 ![screen shot 2016-08-24 at 8 38 11 pm](https://cloud.githubusercontent.com/assets/14007152/17952752/734faff0-6a3b-11e6-95bb-69acd344174b.png)
 
 
-### Protocols
-```swift
-optional func complimentaryGradientView(didSetGradient gradientView: ComplimentaryGradientView, gradientSet: Bool)
-```
-
-### Graident Types
-
-```swift
-public enum GradientType: String {
-  
-  //background
-  case backgroundPrimary
-  case backgroundSecondary
-  case backgroundDetail
-  //primary
-  case primaryBackground
-  case primarySecondary
-  case primaryDetail
-  //secondary
-  case secondaryBackground
-  case secondaryPrimary
-  case secondaryDetail
-  //detail
-  case detailBackground
-  case detailPrimary
-  case detailSecondary
-  //AllColors
-  case allColors
-}
-```
-
 ## Dependencies
 
 <a href="https://github.com/jathu/UIImageColors" > UIImageColors <a/>
