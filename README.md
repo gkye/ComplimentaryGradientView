@@ -20,6 +20,28 @@ Inspired by <a href="https://github.com/benhowdle89/grade"> Grade.js </a>:heart:
 ![](demo.gif)
 
 
+## Usage
+
+### Code
+```swift
+let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
+
+//Colors for gradient are derived from the provided image
+gradientView.image = UIImage(named: "myImg")
+
+gradientView.gradientTpye = .colors(start: .primary, end: .secondary)
+
+// Default = `.left`
+gradientView.gradientStartPoint = .left
+
+// Default = `.high`
+gradientView.quality = .high
+```
+
+### Storyboard
+![screen shot 2016-08-24 at 8 38 11 pm](https://cloud.githubusercontent.com/assets/14007152/17952752/734faff0-6a3b-11e6-95bb-69acd344174b.png)
+
+
 ## Installation
 
 ### CocoaPods
@@ -42,33 +64,9 @@ pod 'ComplimentaryGradientView', '~> 0.1.0'
 ```
 
 ### Manually
-
 Download and drop `ComplimentaryGradientView.xcodeproj` into your project
 <b>OR</b> 
 Drag `Source` folder into your project.
-
-
-## Usage
-
-### Code
-```swift
-let gradientView = ComplimentaryGradientView(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-
-//Colors for gradient are derived from the provided image
-gradientView.image = UIImage(named: "myImg")
-
-gradientView.gradientTpye = .colors(start: .primary, end: .secondary)
-
-// Default = `.left`
-gradientView.gradientStartPoint = .left
-
-// Default = `.high`
-gradientView.quality = .high
-```
-
-### Storyboard
-![screen shot 2016-08-24 at 8 38 11 pm](https://cloud.githubusercontent.com/assets/14007152/17952752/734faff0-6a3b-11e6-95bb-69acd344174b.png)
-
 
 ## Dependencies
 
