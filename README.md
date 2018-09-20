@@ -41,6 +41,15 @@ gradientView.quality = .high
 ### Storyboard
 ![screen shot 2016-08-24 at 8 38 11 pm](https://cloud.githubusercontent.com/assets/14007152/17952752/734faff0-6a3b-11e6-95bb-69acd344174b.png)
 
+### Migration [Guide](https://github.com/gkye/ComplimentaryGradientView/wiki/3.0-Migration-Guide).
+Version 3.0 introduces `GradientVariant` and reduces `GradientType` to two simple options: 
+``` swift
+// Create a gradient using all colors found in image
+ case all 
+ // Create gradient using variants. ie. .colors(start: .primary, end: .detail) 
+ case colors(start: GradientVariant, end: GradientVariant) 
+``` 
+
 
 ## Installation
 
