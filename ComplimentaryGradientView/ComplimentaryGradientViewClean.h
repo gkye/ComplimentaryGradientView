@@ -2,8 +2,8 @@
 //  ComplimentaryGradientView.h
 //  ComplimentaryGradientView
 //
-//  Created by George Kye on 2016-08-22.
-//  Copyright © 2016 George Kye. All rights reserved.
+//  Created by George Kye on 2018-09-21.
+//  Copyright © 2018 George Kye. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

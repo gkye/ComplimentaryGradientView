@@ -7,50 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18358DEE21556076009DD9DF /* ComplimentaryGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */; };
+		18358DEF21556076009DD9DF /* ComplimentaryGradientView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		18DF8D1A214EE310001B4F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8D19214EE310001B4F6D /* AppDelegate.swift */; };
 		18DF8D1F214EE310001B4F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DF8D1D214EE310001B4F6D /* Main.storyboard */; };
 		18DF8D21214EE310001B4F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DF8D20214EE310001B4F6D /* Assets.xcassets */; };
 		18DF8D24214EE310001B4F6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DF8D22214EE310001B4F6D /* LaunchScreen.storyboard */; };
 		18DF8D2D214EE342001B4F6D /* Combinatorics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8D2C214EE342001B4F6D /* Combinatorics.swift */; };
 		18DF8D44214EE3C9001B4F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8D2E214EE352001B4F6D /* ViewController.swift */; };
-		18DF8D55214EE526001B4F6D /* ComplimentaryGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DF8D4E214EE505001B4F6D /* ComplimentaryGradientView.framework */; };
-		18DF8D56214EE526001B4F6D /* ComplimentaryGradientView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18DF8D4E214EE505001B4F6D /* ComplimentaryGradientView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		18DF8D4D214EE505001B4F6D /* PBXContainerItemProxy */ = {
+		18358DEC2155606D009DD9DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
+			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
 			proxyType = 2;
-			remoteGlobalIDString = 5E3D428A1D6BF8C80058B0DB;
+			remoteGlobalIDString = 18358DBE21555783009DD9DF;
 			remoteInfo = ComplimentaryGradientView;
 		};
-		18DF8D4F214EE505001B4F6D /* PBXContainerItemProxy */ = {
+		18358DF021556076009DD9DF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5E3D42941D6BF8C80058B0DB;
-			remoteInfo = ComplimentaryGradientViewTests;
-		};
-		18DF8D51214EE505001B4F6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5CC5CB571E37592800FE0206;
-			remoteInfo = "ComplimentaryGradientView tvOS";
-		};
-		18DF8D53214EE505001B4F6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5CC5CB5F1E37592800FE0206;
-			remoteInfo = "ComplimentaryGradientView tvOSTests";
-		};
-		18DF8D57214EE526001B4F6D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
+			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
 			proxyType = 1;
-			remoteGlobalIDString = 5E3D42891D6BF8C80058B0DB;
+			remoteGlobalIDString = 18358DBD21555783009DD9DF;
 			remoteInfo = ComplimentaryGradientView;
 		};
 /* End PBXContainerItemProxy section */
@@ -62,7 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18DF8D56214EE526001B4F6D /* ComplimentaryGradientView.framework in Embed Frameworks */,
+				18358DEF21556076009DD9DF /* ComplimentaryGradientView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComplimentaryGradientView.xcodeproj; path = ../ComplimentaryGradientView.xcodeproj; sourceTree = "<group>"; };
 		18DF8D16214EE310001B4F6D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DF8D19214EE310001B4F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DF8D1E214EE310001B4F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,7 +58,6 @@
 		18DF8D25214EE310001B4F6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18DF8D2C214EE342001B4F6D /* Combinatorics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Combinatorics.swift; sourceTree = "<group>"; };
 		18DF8D2E214EE352001B4F6D /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComplimentaryGradientView.xcodeproj; path = ../ComplimentaryGradientView.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,17 +65,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18DF8D55214EE526001B4F6D /* ComplimentaryGradientView.framework in Frameworks */,
+				18358DEE21556076009DD9DF /* ComplimentaryGradientView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18358DE92155606D009DD9DF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		18DF8D0D214EE310001B4F6D = {
 			isa = PBXGroup;
 			children = (
-				18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */,
+				18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */,
 				18DF8D18214EE310001B4F6D /* Demo */,
 				18DF8D17214EE310001B4F6D /* Products */,
 			);
@@ -132,17 +119,6 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		18DF8D47214EE505001B4F6D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18DF8D4E214EE505001B4F6D /* ComplimentaryGradientView.framework */,
-				18DF8D50214EE505001B4F6D /* ComplimentaryGradientViewTests.xctest */,
-				18DF8D52214EE505001B4F6D /* ComplimentaryGradientView.framework */,
-				18DF8D54214EE505001B4F6D /* ComplimentaryGradientView tvOSTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -158,7 +134,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				18DF8D58214EE526001B4F6D /* PBXTargetDependency */,
+				18358DF121556076009DD9DF /* PBXTargetDependency */,
 			);
 			name = Demo;
 			productName = Demoo;
@@ -193,8 +169,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 18DF8D47214EE505001B4F6D /* Products */;
-					ProjectRef = 18DF8D46214EE505001B4F6D /* ComplimentaryGradientView.xcodeproj */;
+					ProductGroup = 18358DE92155606D009DD9DF /* Products */;
+					ProjectRef = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -205,32 +181,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		18DF8D4E214EE505001B4F6D /* ComplimentaryGradientView.framework */ = {
+		18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = ComplimentaryGradientView.framework;
-			remoteRef = 18DF8D4D214EE505001B4F6D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		18DF8D50214EE505001B4F6D /* ComplimentaryGradientViewTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ComplimentaryGradientViewTests.xctest;
-			remoteRef = 18DF8D4F214EE505001B4F6D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		18DF8D52214EE505001B4F6D /* ComplimentaryGradientView.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ComplimentaryGradientView.framework;
-			remoteRef = 18DF8D51214EE505001B4F6D /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		18DF8D54214EE505001B4F6D /* ComplimentaryGradientView tvOSTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "ComplimentaryGradientView tvOSTests.xctest";
-			remoteRef = 18DF8D53214EE505001B4F6D /* PBXContainerItemProxy */;
+			remoteRef = 18358DEC2155606D009DD9DF /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -262,10 +217,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		18DF8D58214EE526001B4F6D /* PBXTargetDependency */ = {
+		18358DF121556076009DD9DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ComplimentaryGradientView;
-			targetProxy = 18DF8D57214EE526001B4F6D /* PBXContainerItemProxy */;
+			targetProxy = 18358DF021556076009DD9DF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

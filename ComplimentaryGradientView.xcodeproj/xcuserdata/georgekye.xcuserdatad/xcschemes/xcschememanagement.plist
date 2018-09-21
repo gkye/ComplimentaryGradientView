@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ComplimentaryGradientView tvOS.xcscheme_^#shared#^_</key>
+		<key>ComplimentaryGradientView tvOS.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>ComplimentaryGradientView.xcscheme_^#shared#^_</key>
+		<key>ComplimentaryGradientViewClean.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -17,32 +17,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5CC5CB561E37592800FE0206</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5CC5CB5E1E37592800FE0206</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E3D42891D6BF8C80058B0DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E3D42931D6BF8C80058B0DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E3D42AD1D6BFA2C0058B0DB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>5E3D42C01D6BFA2C0058B0DB</key>
+		<key>18358DBD21555783009DD9DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

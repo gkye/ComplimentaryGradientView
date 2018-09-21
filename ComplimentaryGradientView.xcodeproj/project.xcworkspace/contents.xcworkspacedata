@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ComplimentaryGradientView.xcodeproj">
+      location = "self:/Users/georgekye/Desktop/ComplimentaryGradientViewClean/ComplimentaryGradientView.xcodeproj">
    </FileRef>
 </Workspace>
