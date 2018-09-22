@@ -17,7 +17,7 @@ Inspired by <a href="https://github.com/benhowdle89/grade"> Grade.js </a>:heart:
 
 ## Demo
 #### Sorry for the poor quality gif 
-![Demo](https://github.com/gkye/ComplimentaryGradientView/blob/ver-3.0/Resources/demo.gif)
+![Demo](https://github.com/gkye/ComplimentaryGradientView/blob/master/Resources/demo.gif)
 
 
 ## Usage
@@ -39,7 +39,7 @@ gradientView.quality = .high
 ```
 
 ### Storyboard
-![Demo](https://github.com/gkye/ComplimentaryGradientView/blob/ver-3.0/Resources/storyboard_usage.png)
+![Demo](https://github.com/gkye/ComplimentaryGradientView/blob/master/Resources/storyboard_usage.png)
 
 ### Migration [Guide](https://github.com/gkye/ComplimentaryGradientView/wiki/3.0-Migration-Guide).
 Version 3.0 introduces `GradientVariant` and reduces `GradientType` to two simple options: 
