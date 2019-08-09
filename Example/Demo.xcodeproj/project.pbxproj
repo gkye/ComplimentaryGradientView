@@ -32,6 +32,13 @@
 			remoteGlobalIDString = 18358DBD21555783009DD9DF;
 			remoteInfo = ComplimentaryGradientView;
 		};
+		187C2E2422FD01E000E47323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18358DF7215565EB009DD9DF;
+			remoteInfo = "ComplimentaryGradientView tvOS";
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */,
+				187C2E2522FD01E000E47323 /* ComplimentaryGradientView_tvOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -153,6 +161,7 @@
 				TargetAttributes = {
 					18DF8D15214EE310001B4F6D = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -186,6 +195,13 @@
 			fileType = wrapper.framework;
 			path = ComplimentaryGradientView.framework;
 			remoteRef = 18358DEC2155606D009DD9DF /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		187C2E2522FD01E000E47323 /* ComplimentaryGradientView_tvOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ComplimentaryGradientView_tvOS.framework;
+			remoteRef = 187C2E2422FD01E000E47323 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -374,7 +390,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = george.kye.Demoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -393,7 +409,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = george.kye.Demoo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

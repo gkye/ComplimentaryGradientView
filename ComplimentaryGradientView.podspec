@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ComplimentaryGradientView'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'Create complementary gradients generated from dominant and prominent colors in supplied image.'
 
   s.description      = 'Create complementary gradients generated from dominant and prominent colors in supplied image. Inspired by Grade.js'

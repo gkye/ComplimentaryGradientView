@@ -49,7 +49,7 @@ public enum GradientType {
   /// Storyboard value are split by dot delimter.
   ///  First index = start color, Second index = end color
   /// - Parameter storyboardValue: IBInspectable value
-  static func gradientFrom(storyboardValue: String, _ colors: UIImageColors) -> StoryboardGradient? {
+  static func gradientFrom(_ storyboardValue: String, colors: UIImageColors) -> StoryboardGradient? {
     if storyboardValue.lowercased() == "all" {
       return (GradientType.all.gradientColors(colors), .all)
     }else {

@@ -175,10 +175,11 @@
 				TargetAttributes = {
 					18358DBD21555783009DD9DF = {
 						CreatedOnToolsVersion = 10.0;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1100;
 					};
 					18358DF6215565EB009DD9DF = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -188,6 +189,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 18358DB421555783009DD9DF;
 			productRefGroup = 18358DBF21555783009DD9DF /* Products */;
@@ -388,7 +390,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -413,7 +415,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = george.kye.ComplimentaryGradientView;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -438,7 +440,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};
@@ -464,7 +466,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 3;
 				TVOS_DEPLOYMENT_TARGET = 12.0;
 			};

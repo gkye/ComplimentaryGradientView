@@ -70,23 +70,27 @@ open class ComplimentaryGradientView: UIView{
         createGradient(img)
     }
   }
-  
-  fileprivate func createGradient(_ image: UIImage?){
+}
+
+fileprivate extension ComplimentaryGradientView {
+
+  func createGradient(_ image: UIImage?){
     guard let image = image else { return }
     if !backgroundExecution{
       configGradientLayer(image.getColors(quality: gradientQuality))
-    }else{
+    } else{
       image.getColors(quality: gradientQuality) { [weak self] colors in
         self?.configGradientLayer(colors)
       }
     }
   }
   
-  fileprivate func gradientFrom(storyboardValue: String, _ image: UIImage){
-    let imgColors = image.getColors(quality: gradientQuality)
-    guard let (calculatedColor, type) = GradientType.gradientFrom(storyboardValue: storyboardValue, imgColors ) else {
-      return
+  func gradientFrom(storyboardValue: String, _ image: UIImage){
+    guard let imgColors = image.getColors(quality: gradientQuality),
+      let (calculatedColor, type) = GradientType.gradientFrom(storyboardValue, colors: imgColors) else {
+        return
     }
+    
     self.calculatedColor = calculatedColor
     self.gradientType = type
     if !backgroundExecution{
@@ -98,12 +102,12 @@ open class ComplimentaryGradientView: UIView{
     }
   }
   
-  fileprivate func configGradientLayer(_ imageColors: UIImageColors) {
-    guard let _ = gradientType else {
+  func configGradientLayer(_ imageColors: UIImageColors?) {
+    guard gradientType != nil, let colors = imageColors else {
       gradientLayer.removeFromSuperlayer()
       return
     }
-    calculatedColor = gradientType.gradientColors(imageColors)
+    calculatedColor = gradientType.gradientColors(colors)
     
     gradientLayer.removeFromSuperlayer()
     applyGradient()
@@ -111,7 +115,7 @@ open class ComplimentaryGradientView: UIView{
     delegate?.complimentaryGradientView?(didSetGradient: self, gradientSet: true)
   }
   
-  fileprivate func applyGradient() {
+  func applyGradient() {
     gradientLayer.frame.size = self.frame.size
     gradientLayer.colors = calculatedColor
     gradientLayer.addStartPointsToGradient(gradientStartPoint, customPoint: customPoint)
