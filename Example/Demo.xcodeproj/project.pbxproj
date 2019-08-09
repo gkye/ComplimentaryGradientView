@@ -3,12 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18358DEE21556076009DD9DF /* ComplimentaryGradientView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */; };
-		18358DEF21556076009DD9DF /* ComplimentaryGradientView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		187C2E2922FD175100E47323 /* ComplimentaryGradientView in Frameworks */ = {isa = PBXBuildFile; productRef = 187C2E2822FD175100E47323 /* ComplimentaryGradientView */; };
 		18DF8D1A214EE310001B4F6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8D19214EE310001B4F6D /* AppDelegate.swift */; };
 		18DF8D1F214EE310001B4F6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18DF8D1D214EE310001B4F6D /* Main.storyboard */; };
 		18DF8D21214EE310001B4F6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18DF8D20214EE310001B4F6D /* Assets.xcassets */; };
@@ -17,30 +16,6 @@
 		18DF8D44214EE3C9001B4F6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18DF8D2E214EE352001B4F6D /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		18358DEC2155606D009DD9DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18358DBE21555783009DD9DF;
-			remoteInfo = ComplimentaryGradientView;
-		};
-		18358DF021556076009DD9DF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 18358DBD21555783009DD9DF;
-			remoteInfo = ComplimentaryGradientView;
-		};
-		187C2E2422FD01E000E47323 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18358DF7215565EB009DD9DF;
-			remoteInfo = "ComplimentaryGradientView tvOS";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
 		18DF8D43214EE3AD001B4F6D /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -48,7 +23,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				18358DEF21556076009DD9DF /* ComplimentaryGradientView.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,7 +30,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ComplimentaryGradientView.xcodeproj; path = ../ComplimentaryGradientView.xcodeproj; sourceTree = "<group>"; };
 		18DF8D16214EE310001B4F6D /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18DF8D19214EE310001B4F6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18DF8D1E214EE310001B4F6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -72,26 +45,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18358DEE21556076009DD9DF /* ComplimentaryGradientView.framework in Frameworks */,
+				187C2E2922FD175100E47323 /* ComplimentaryGradientView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18358DE92155606D009DD9DF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */,
-				187C2E2522FD01E000E47323 /* ComplimentaryGradientView_tvOS.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		18DF8D0D214EE310001B4F6D = {
 			isa = PBXGroup;
 			children = (
-				18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */,
 				18DF8D18214EE310001B4F6D /* Demo */,
 				18DF8D17214EE310001B4F6D /* Products */,
 			);
@@ -142,9 +105,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				18358DF121556076009DD9DF /* PBXTargetDependency */,
 			);
 			name = Demo;
+			packageProductDependencies = (
+				187C2E2822FD175100E47323 /* ComplimentaryGradientView */,
+			);
 			productName = Demoo;
 			productReference = 18DF8D16214EE310001B4F6D /* Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -174,37 +139,17 @@
 				Base,
 			);
 			mainGroup = 18DF8D0D214EE310001B4F6D;
+			packageReferences = (
+				187C2E2722FD175100E47323 /* XCRemoteSwiftPackageReference "ComplimentaryGradientView" */,
+			);
 			productRefGroup = 18DF8D17214EE310001B4F6D /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 18358DE92155606D009DD9DF /* Products */;
-					ProjectRef = 18358DE82155606D009DD9DF /* ComplimentaryGradientView.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				18DF8D15214EE310001B4F6D /* Demo */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		18358DED2155606D009DD9DF /* ComplimentaryGradientView.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ComplimentaryGradientView.framework;
-			remoteRef = 18358DEC2155606D009DD9DF /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		187C2E2522FD01E000E47323 /* ComplimentaryGradientView_tvOS.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ComplimentaryGradientView_tvOS.framework;
-			remoteRef = 187C2E2422FD01E000E47323 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		18DF8D14214EE310001B4F6D /* Resources */ = {
@@ -231,14 +176,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		18358DF121556076009DD9DF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ComplimentaryGradientView;
-			targetProxy = 18358DF021556076009DD9DF /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18DF8D1D214EE310001B4F6D /* Main.storyboard */ = {
@@ -436,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		187C2E2722FD175100E47323 /* XCRemoteSwiftPackageReference "ComplimentaryGradientView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gkye/ComplimentaryGradientView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		187C2E2822FD175100E47323 /* ComplimentaryGradientView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 187C2E2722FD175100E47323 /* XCRemoteSwiftPackageReference "ComplimentaryGradientView" */;
+			productName = ComplimentaryGradientView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 18DF8D0E214EE310001B4F6D /* Project object */;
 }

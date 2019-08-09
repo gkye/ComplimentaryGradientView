@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/georgekye/Documents/GitHub/ComplimentaryGradientView/Example/Demo.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>

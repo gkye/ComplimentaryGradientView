@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ComplimentaryGradientView",
+        "repositoryURL": "https://github.com/gkye/ComplimentaryGradientView.git",
+        "state": {
+          "branch": null,
+          "revision": "906bbfa661e4126f1805bd054c25e5a68756489e",
+          "version": "0.4.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
